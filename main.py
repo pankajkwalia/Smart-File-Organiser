@@ -9,11 +9,11 @@ try:
     mycursor = mycon.cursor()
 
     # Create database if it doesn't exist
-    mycursor.execute("CREATE DATABASE IF NOT EXISTS Automatic_Pc_File_Sorter")
+    mycursor.execute("CREATE DATABASE IF NOT EXISTS Smart_File_Organiser")
     mycon.close()
 
     # Connect to the created database
-    con = sqltor.connect(host="localhost", user="root", passwd="1234", database="Automatic_Pc_File_Sorter")
+    con = sqltor.connect(host="localhost", user="root", passwd="1234", database="Smart_File_Organiser")
     cursor = con.cursor()
 
     # Drop and create Sorter table
@@ -174,4 +174,4 @@ while True:
         print(f"Unexpected error: {e}")
 
 print()
-print("These records are stored in the MySQL database 'Automatic_Pc_File_Sorter'")
+print("These records are stored in the MySQL database 'Smart_File_Organiser'")
